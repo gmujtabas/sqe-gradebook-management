@@ -1,10 +1,7 @@
-# Feature Request
+# Pull Request
 
-## Problem
-<!-- What problem does this feature solve? -->
+## Checklist
 
-## Proposed Solution
-<!-- Describe the feature or solution you are proposing. -->
-
-## Alternatives Considered
-<!-- Describe any alternative solutions you considered. -->
+- [ ] Tests added/updated
+- [ ] Documentation updated
+- [ ] Linked issue referenced
