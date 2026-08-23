@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class Student {
     String name;
-    String idNumber;
+    String studentId;
     ArrayList<Integer> scores;
 
-    public Student(String name,String idNumber) {
+    public Student(String name,String studentId) {
         this.name=name;
-        this.idNumber=idNumber;
+        this.studentId=studentId;
         this.scores=new ArrayList<>();
     }
 
