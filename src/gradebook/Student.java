@@ -22,6 +22,12 @@ public class Student {
         return (double) sum/scores.size();
     }
 
+    /**
+     * Adds a score to the student's list of scores.
+     * @param score the score to add; must not be negative
+     * @throws IllegalArgumentException if the score is negative
+     */
+    
     public void addScore(int score) {
         if (score < 0) {
             throw new IllegalArgumentException("Score cannot be negative");
