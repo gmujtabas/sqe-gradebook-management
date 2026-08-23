@@ -20,3 +20,13 @@ Merge
 CI
   ↓
 Release
+
+
+
+
+## Rebase Practice
+
+Initial work.
+Second change.
+Third change.
+Done.
