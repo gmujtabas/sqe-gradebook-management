@@ -1,10 +1,15 @@
+---
+name: Feature Request
+about: Suggest a new feature or improvement
+title: ''
+labels: ''
+assignees: ''
+---
+
 # Feature Request
 
 ## Problem
-<!-- What problem does this feature solve? -->
 
 ## Proposed Solution
-<!-- Describe the feature or solution you are proposing. -->
 
 ## Alternatives Considered
-<!-- Describe any alternative solutions you considered. -->
