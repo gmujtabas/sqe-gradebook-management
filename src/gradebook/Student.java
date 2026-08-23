@@ -28,10 +28,10 @@ public class Student {
      * @throws IllegalArgumentException if the score is negative
      */
     
-    public void addScore(int score) {
-        if (score < 0) {
-            throw new IllegalArgumentException("Score cannot be negative");
+    public void addScore(int newScore) {
+        if (newScore < 0 || newScore > 100) {
+            throw new IllegalArgumentException("Score must be between 0 and 100");
         }
-        scores.add(score);
+        scores.add(newScore);
     }
 }
