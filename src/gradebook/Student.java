@@ -11,10 +11,6 @@ public class Student {
         this.scores=new ArrayList<>();
     }
 
-    public void addScore(int score) {
-    scores.add(score);
-    }
-
     public double average() {
         if (scores.isEmpty()) {
             return 0.0;
@@ -24,5 +20,9 @@ public class Student {
             sum+=score;
         }
         return (double) sum/scores.size();
+    }
+
+    public void addScore(int score) {
+        scores.add(score);
     }
 }
