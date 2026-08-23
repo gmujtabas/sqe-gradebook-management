@@ -82,3 +82,23 @@ The original message does not follow the Conventional Commits format. The improv
 
 #### Why the improved version is better.
 The original message does not follow the Conventional Commits format. The improved version uses the `docs` type to clearly communicate that documentation was added. It is more consistent and easier to understand when reviewing Git history.
+
+
+
+
+## Task 5 — Rebase Practice
+
+I created the `feature/interactive-rebase-practice` branch and made four small messy commits:
+
+- `wip`
+- `fix typo`
+- `more fixes`
+- `done`
+
+I then used `git rebase -i main` to squash the four commits into a single clean commit.
+
+The final commit message was:
+
+`feat(workflow): practice interactive rebase`
+
+The rebase produced a cleaner history by replacing several unclear commits with one meaningful Conventional Commit.
