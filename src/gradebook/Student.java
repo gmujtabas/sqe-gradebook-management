@@ -11,8 +11,12 @@ public class Student {
         this.scores = new ArrayList<>();
     }
 
-    public void addScore(int newScore) {
-        scores.add(newScore);
+    public void addScore(int score) {
+        if (score < 0 || score > 100) {
+            throw new IllegalArgumentException("Score must be between 0 and 100");
+        }
+
+        scores.add(score);
     }
 
     public double average() {
