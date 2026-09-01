@@ -7,5 +7,5 @@ SQE Gradebook is a Java-based project for managing students and their grades. It
 Clone the repository:
 
 ```bash
-git clone git@github.com:gmujtabas/sqe-lib-management.git
-cd sqe-lib-management
+git clone git@github.com:gmujtabas/sqe-gradebook-management.git
+cd sqe-gradebook-management
