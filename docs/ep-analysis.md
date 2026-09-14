@@ -22,3 +22,23 @@ length of 50 characters, and contain only letters, spaces, and hyphens.
 | Empty string | 0 characters | Invalid | `""` | Input should be rejected |
 | Over-length string | More than 50 characters | Invalid | 51-character name | Input should be rejected |
 | Digits/symbols | Contains digits or disallowed symbols | Invalid | `Ali123` | Input should be rejected |
+
+## 3. Task 4 — Name Validation Tests
+
+The `validateName()` method was implemented according to the Student Name equivalence partitioning rule from Task 1.
+
+| Test Case | Input | Expected Result |
+|---|---|---|
+| Valid typical name | `Ali Khan` | Accepted |
+| Empty name | `""` | Rejected |
+| Over-length name | 51-character name | Rejected |
+| Name with digits | `Ali123` | Rejected |
+
+The complete JUnit test suite was executed using:
+
+mvn test
+
+Test Result:
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESS
