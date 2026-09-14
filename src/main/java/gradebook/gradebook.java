@@ -56,6 +56,15 @@ public class gradebook {
         input.close();
     }
 
+
+
+    public static void validateName(String name) {
+        if (name == null || name.isEmpty() || name.length() > 50 || !name.matches("[A-Za-z -]+")) {
+            throw new IllegalArgumentException("Invalid student name");
+        }
+    }
+
+
     public static char letterGrade(int score) {
     if (score < 0 || score > 100) {
         throw new IllegalArgumentException("Score must be between 0 and 100");
