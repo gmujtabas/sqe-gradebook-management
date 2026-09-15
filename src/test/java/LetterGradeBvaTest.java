@@ -4,7 +4,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class LetterGradeBvaTest {
+public class LetterGradeBVATest {
 
     @ParameterizedTest
     @CsvSource({
