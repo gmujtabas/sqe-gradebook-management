@@ -7,12 +7,12 @@ boundaries are 60, 70, 80, and 90.
 
 | Boundary | Value-1 | Expected | Value | Expected | Value+1 | Expected |
 |---|---:|---|---:|---|---:|---|
-| 0 | -1 | Invalid | 0 | F | 1 | F |
+| 0 | -1 | IllegalArgumentException | 0 | F | 1 | F |
 | 60 | 59 | F | 60 | D | 61 | D |
 | 70 | 69 | D | 70 | C | 71 | C |
 | 80 | 79 | C | 80 | B | 81 | B |
 | 90 | 89 | B | 90 | A | 91 | A |
-| 100 | 99 | A | 100 | A | 101 | Invalid |
+| 100 | 99 | A | 100 | A | 101 | IllegalArgumentException |
 
 ## Boundary Values
 
