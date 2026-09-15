@@ -7,8 +7,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 public class RosterScoreCountTest {
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 7})
-    public void testInvalidScoreCount(int scoreCount) {
+unt(int scoreCount) {
         Student student = new Student("Ali", "101");
 
         for (int i = 0; i < scoreCount; i++) {
