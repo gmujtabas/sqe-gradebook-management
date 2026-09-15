@@ -35,9 +35,8 @@ public class LetterGradeBvaTest {
         "101"
     })
     void testInvalidDomainBoundaries(int score) {
-        assertThrows(
-            IllegalArgumentException.class,
-            () -> gradebook.letterGrade(score)
+        assertThrows(IllegalArgumentException.class, () -> 
+             gradebook.letterGrade(score)
         );
     }
 }
