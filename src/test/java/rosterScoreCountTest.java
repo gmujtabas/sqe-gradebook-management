@@ -7,9 +7,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 public class RosterScoreCountTest {
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 3, 8})
-    public void testScoreCount(int scoreCount) {
-
+    @ValueSource(ints = {0, 7})
+    public void testInvalidScoreCount(int scoreCount) {
         Student student = new Student("Ali", "101");
 
         for (int i = 0; i < scoreCount; i++) {
@@ -18,13 +17,23 @@ public class RosterScoreCountTest {
 
         Roster roster = new Roster();
 
-        if (scoreCount == 3) {
-            assertDoesNotThrow(() -> roster.addStudent(student));
-        } else {
-            assertThrows(
-                IllegalArgumentException.class,
-                () -> roster.addStudent(student)
-            );
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> roster.addStudent(student)
+        );
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 5, 6})
+    public void testValidScoreCount(int scoreCount) {
+        Student student = new Student("Ali", "101");
+
+        for (int i = 0; i < scoreCount; i++) {
+            student.addScore(75);
         }
+
+        Roster roster = new Roster();
+
+        assertDoesNotThrow(() -> roster.addStudent(student));
     }
 }
